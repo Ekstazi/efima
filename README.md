@@ -1,4 +1,4 @@
 efima
 =====
 
-Easy FIle MAnager for yii
+Easy FIle MAnager for yii  based on elfinder
