@@ -6,12 +6,22 @@
  * Time: 23:03
  * To change this template use File | Settings | File Templates.
  */
-class EfimaInput extends CInputWidget
+class EFiMaInput extends CInputWidget
 {
-
+	/**
+	 * @var array client options
+	 */
 	public $options=array();
 
+	/**
+	 * @var string connect slot
+	 */
 	public $slot='default';
+
+	/**
+	 * @var EFiMaModule if null try to automatic detect it
+	 */
+	public $module;
 
 	public function run()
 	{
@@ -20,7 +30,10 @@ class EfimaInput extends CInputWidget
 			echo CHtml::activeTextField($this->model,$this->attribute,$this->htmlOptions);
 		else
 			echo CHtml::textField($this->name,$this->value,$this->htmlOptions);
-		//echo CHtml::button()
+		echo CHtml::button(Yii::t('efima','Browse'));
+		//\Yii::app()->hasModule();
+		if(!isset($module));
+		$module;
 	}
 
 }

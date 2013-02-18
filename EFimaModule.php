@@ -12,7 +12,7 @@
 /**
  * @property string $assets
  */
-class EfimaModule extends \CWebModule
+class EFiMaModule extends \CWebModule
 {
 	/**
 	 * Connector slots. Can be many slots. Each for own path.
@@ -43,6 +43,11 @@ class EfimaModule extends \CWebModule
 		/** @var $assetManager CAssetManager */
 		$assetManager=Yii::app()->assetManager;
 		return $this->_assetsUrl=$assetManager->publish(Yii::getPathOfAlias('efima.assets'),false,-1,YII_DEBUG && !$assetManager->linkAssets);
+	}
+
+	public function input($options)
+	{
+		
 	}
 
 	protected function init()

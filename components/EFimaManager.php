@@ -6,7 +6,22 @@
  * Time: 23:03
  * To change this template use File | Settings | File Templates.
  */
-class EFimaManager extends CWidget
+class EFiMaManager extends CWidget
 {
-	public
+	/**
+	 * @var array client options
+	 */
+	public $options=array();
+
+	public $slot='default';
+
+	/**
+	 * @var EFiMaModule if null try to automatic detect it
+	 */
+	public $module;
+
+	public function run()
+	{
+
+	}
 }
